@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { Link } from "react-router-dom"
 
 
@@ -13,7 +13,7 @@ const Navbar = () => {
         <nav className="relative flex items-center border justify-between mx-4 max-md:w-full bg-slate-800 max-md:justify-between border-slate-700 px-6 py-4 rounded-full text-white text-sm">
             <Link to="/">
                 <span className='text-2xl font-thin'>
-                    Port
+                    Build
                 </span>
                 <span className='text-2xl text-green-700 font-thin'>
                     folio
@@ -66,16 +66,16 @@ const Navbar = () => {
             {isMobileMenuOpen && (
                 <div className="absolute top-full left-0 right-0 mt-2 bg-slate-800 border border-slate-700 rounded-lg p-4 flex flex-col items-center gap-4 z-50">
                     <Link className="hover:text-indigo-400 transition-colors" to="/products" onClick={() => setIsMobileMenuOpen(false)}>
-                        Products
+                        Projects
                     </Link>
                     <Link className="hover:text-indigo-400 transition-colors" to="/stories" onClick={() => setIsMobileMenuOpen(false)}>
-                        Customer Stories
+                        Skills
                     </Link>
                     <Link className="hover:text-indigo-400 transition-colors" to="/pricing" onClick={() => setIsMobileMenuOpen(false)}>
-                        Pricing
+                        Templates
                     </Link>
                     <Link className="hover:text-indigo-400 transition-colors" to="/docs" onClick={() => setIsMobileMenuOpen(false)}>
-                        Docs
+                        Settings
                     </Link>
                     <button
                         className="border border-slate-600 hover:bg-slate-700 px-4 py-2 rounded-full text-sm font-medium transition">
